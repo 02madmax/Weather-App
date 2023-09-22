@@ -43,7 +43,7 @@ For additional questions, contact me:
 
 ## Links
 Github Repo: https://github.com/02madmax/Weather-App
-Deployed Applicaton: 
+Deployed Applicaton: https://02madmax.github.io/Weather-App/
 
 ## Screenshots
 ![Screenshot](./assets/images/screenshot1.png)
