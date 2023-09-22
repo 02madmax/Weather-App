@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-    max-width: 600px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
@@ -45,10 +45,27 @@ button:hover {
     margin-top: 20px;
 }
 
+
 #forecast {
     margin-top: 20px;
+    text-align: center;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
 }
+
+.forecast-item {
+    display: inline-block;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+    width: calc(20% - 20px); 
+    text-align: left;
+    height: 300px; 
+    overflow-y: auto; 
+}
+
 
 #search-history {
     margin-top: 20px;
 }
+
