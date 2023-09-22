@@ -95,13 +95,19 @@ function displayForecast(data) {
 
 // Function to add city to search history and local storage
 function addToSearchHistory(city) {
-    const button = document.createElement('button');
-    button.textContent = city;
-    button.addEventListener('click', () => {
-        getWeatherData(city);
-    });
-    searchHistory.appendChild(button);
-    // Save the city to local storage
-    saveCityToLocalStorage(city);
+    // Check if the city already exists in the search history
+    const existingCities = Array.from(searchHistory.children).map((button) => button.textContent);
+    if (!existingCities.includes(city)) {
+        const button = document.createElement('button');
+        button.textContent = city;
+        button.addEventListener('click', () => {
+            getWeatherData(city);
+        });
+        searchHistory.appendChild(button);
+        // Save the city to local storage
+        saveCityToLocalStorage(city);
+    }
 }
+
+
 
