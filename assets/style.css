@@ -49,7 +49,7 @@ button:hover {
 #forecast {
     margin-top: 20px;
     text-align: center;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-x: hidden;
 }
 
 .forecast-item {
